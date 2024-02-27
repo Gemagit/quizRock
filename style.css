@@ -6,6 +6,7 @@
     color: rgb(52, 51, 51);
     color: rgb(121, 131, 224);
     color: rgb(238, 194, 84);
+    color: rgb(39, 48, 129);
 }
 
 
@@ -118,6 +119,7 @@ form {
     margin:3px;
 }
 
+
 label {
     color: black;
     font-size: 20px;
@@ -147,7 +149,8 @@ footer {
 
 h3 {
     color: rgb(121, 131, 224);
-    font-size: 8px;
+    font-size: 12px;
+    margin-top: 30px;
 }
 
 
