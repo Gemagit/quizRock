@@ -8,14 +8,26 @@ const respuestasCorrectas = {
     pregunta5: "1997"
 }
 
+
+
+
 const respuestas = document.querySelectorAll(".respuesta");
-// Iterar sobre cada elemento y agregar un event listener
-respuestas.forEach(function(respuesta) {
-    respuesta.addEventListener("click", function() {
-        // Cambia el color de fondo del contenedor(respuesta)
-       respuesta.style.backgroundColor = "rgb(39, 48, 129)";
+// Itero sobre cada elemento y agrego un event listener
+respuestas.forEach(function (respuesta) {
+    respuesta.addEventListener("click", function (event) {
+        // Cambio el color de fondo del contenedor(respuesta)
+        console.log(event)
+        event.target.style.backgroundColor = "rgb(39, 48, 129)";
+        //cambie el color al estado original
     });
+    // al hacer click se genera un evento. 
+    // el evento se recoge en el parametro event de la función que se le pasa al event listener
+    //event.target es el elemento html que ha disparado el evento(el label en el que se hace click)
+
+    //hay que comparar el valor de los otros inputs y los que sean checked false poner el color inicial al label
 });
+
+
 
 
 
@@ -28,32 +40,21 @@ document.querySelector("form").addEventListener("submit", function (event) {
     const respuesta4 = event.target.pregunta4.value;
     const respuesta5 = event.target.pregunta5.value;
 
-    const respuestas = document.querySelectorAll(".respuesta");
-// Iterar sobre cada elemento y agregar un event listener
-respuestas.forEach(function(respuesta) {
-    respuesta.addEventListener("click", function() {
-        if (respuesta[i] === respuestasCorrectas[i]){
-            respuesta.style.backgroundColor = "green";
-        } else {
-            respuesta.style.backgroundColor = "red";
-        }
-    });
-});
-
     let aciertos = 0;
     if (respuesta1 === respuestasCorrectas.pregunta1) aciertos++;
     if (respuesta2 === respuestasCorrectas.pregunta2) aciertos++;
     if (respuesta3 === respuestasCorrectas.pregunta3) aciertos++;
     if (respuesta4 === respuestasCorrectas.pregunta4) aciertos++;
     if (respuesta5 === respuestasCorrectas.pregunta5) aciertos++;
+    
 
     if (aciertos <= 3) {
         let emoTriste = "\u{1F61E}";
-        alert(`${emoTriste}Por favor, lea la documentación rockera.${emoTriste}`);
+        alert (`Número de aciertos: ${aciertos}. \n${emoTriste}Por favor, lea la documentación rockera.${emoTriste}`);
+
     } else { //4 aciertos o más
-        let emoRock="\u{1F918}";
-        alert(`${emoRock}¡Enhorabuena, estás hecho un auténtico rockero!${emoRock}`);
+        let emoRock = "\u{1F918}";
+        alert(`Número de aciertos: ${aciertos}. \n${emoRock}¡Enhorabuena, estás hecho un auténtico rockero!${emoRock}`);
         event.target.submit();
     }
 });
-
