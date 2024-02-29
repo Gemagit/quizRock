@@ -13,7 +13,7 @@
 body {
     background-color: black;
     margin: 40px 10px;
-    padding: 15px;
+    padding: 5px;
 }
 
 
@@ -45,8 +45,8 @@ h1 {
     flex-direction: column;
     margin-top: 40px;
     width: 100%;
-    height: 800px;
-    padding: 200px 80px;
+    height: 500px;
+    padding: 120px 80px;
     align-items: center;
 }
 
@@ -140,7 +140,7 @@ button {
     margin-top: 30px;
     width: 50%;
     height: 3em;
-    border: 5px solid rgb(121, 131, 224) ;
+    border: 3px solid rgb(121, 131, 224) ;
 }
 
 footer {
@@ -152,7 +152,7 @@ footer {
 
 h3 {
     color: rgb(121, 131, 224);
-    font-size: 8px;
+    font-size: 10px;
     margin-top: 30px;
 }
 
