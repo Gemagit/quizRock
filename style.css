@@ -107,7 +107,7 @@ form {
 }
 
 
-.contenedorRespuestas {
+.contenedor-respuestas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,15 +151,15 @@ footer {
 }
 
 h3 {
-    color: rgb(121, 131, 224);
-    font-size: 10px;
+    color: rgb(238, 194, 84);
+    font-size: 12px;
     margin-top: 30px;
 }
 
 
 @media only screen and (min-width: 700px) {
 
-    .contenedorRespuestas {
+    .contenedor-respuestas {
         width: 75%;
         display: flex;
         flex-direction: row;
@@ -185,6 +185,10 @@ h3 {
         font-size: 40px;
     }
 
+    h4 {
+        font-size: 16px;
+    }
+
     .logo {
         width: 70px;
     }
@@ -200,6 +204,7 @@ h3 {
 
 @media only screen and (min-width: 1200px) {
 
+   
 
     .pregunta {
         padding: 20px;
@@ -208,7 +213,7 @@ h3 {
         width: 100%;
     }
 
-    .contenedorRespuestas {
+    .contenedor-respuestas {
         width: 80%;
         display: flex;
         flex-direction: row;
@@ -249,8 +254,8 @@ h3 {
     }
 
 
-    h3 {
-        font-size: 12px;
+    h4 {
+        font-size: 20px;
     }
 
 

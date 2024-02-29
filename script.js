@@ -9,33 +9,52 @@ const respuestasCorrectas = {
 }
 
 
-const respuestas = document.querySelectorAll(".respuesta");
-// Itero sobre cada elemento y agrego un event listener
-respuestas.forEach(function (respuesta) {
-    respuesta.addEventListener("input", function (event) {
-        // Cambio el color de fondo del contenedor(respuesta)
-        event.target.parentElement.style.backgroundColor = "rgb(39, 48, 129)";
+//Aquí recojo todos los inputs y los meto en una variable
+const arrayInputs = document.querySelectorAll("input");
+//el evento input hace que se produzca un cambio cada vez que el usuario modifique algo, es decir cada vez que cambie el valor
+
+// recorro todos los input 
+arrayInputs.forEach(function (input) {
+    //le digo que este pendiente cada vez que el usuario haga input
+    input.addEventListener("input", function (event) {
+        //el evento 
+        //si checked es false
+        arrayInputs.forEach(
+            function (input) {
+                //recorro de nuevo todos los inputs, los reviso y los pinto de color claro
+                // Cambio el color de fondo del contenedor(respuesta)
+                if (input.checked) {
+                    input.parentElement.style.backgroundColor = "rgb(39, 48, 129)";
+                } else {
+                    input.parentElement.style.backgroundColor = "rgb(121, 131, 224)";
+                }
+                //y ahora pintamelos oscuros si esta chequeado
+            })
     });
 });
 
 
 
-/* respuestas.forEach(function (respuesta) {
-     document.getElementsByTagName("input")[i].parentElement.children[0].style.backgroundColor = "rgb(39, 48, 129)";
-     if (!respuesta.checked) {
-         document.getElementsByTagName("input")[i].parentElement.children[0].style.backgroundColor = "rgb(121, 131, 224)"; 
-     }
- })
-document.getElementsByTagName("input")[3].parentElement.children[0].style.backgroundColor = "rgb(121, 131, 224)";
- //event.target.parentElement.style.backgroundColor = "rgb(39, 48, 129)";
-}
-)
-});*/
+let submitButton = document.querySelector("button")
+
+submitButton.addEventListener("click", function (event) {
+    let counterRespondidas = 0;
+    let arrayInputs = document.querySelectorAll("input")
+    arrayInputs.forEach(function (input) {
+        if (input.checked) {
+            counterRespondidas++
+        }
+    })
+    if (counterRespondidas != 5) {
+        alert('Te faltan preguntas por contestar')
+    }
+})
+
+
 
 // al hacer click se genera un evento. 
 // el evento se recoge en el parametro event de la función que se le pasa al event listener
 //event.target es el elemento html que ha disparado el evento(el label en el que se hace click)
-
 //hay que comparar el valor de los otros inputs y los que sean checked false poner el color inicial al label
 
 
@@ -50,6 +69,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
     const respuesta4 = event.target.pregunta4.value;
     const respuesta5 = event.target.pregunta5.value;
 
+    
 
     let aciertos = 0;
     if (respuesta1 === respuestasCorrectas.pregunta1) aciertos++;
@@ -58,7 +78,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
     if (respuesta4 === respuestasCorrectas.pregunta4) aciertos++;
     if (respuesta5 === respuestasCorrectas.pregunta5) aciertos++;
 
-
+    if (document.querySelectorAll("input[type='radio']"))
 
     if (aciertos <= 3) {
         let emoTriste = "\u{1F61E}";
