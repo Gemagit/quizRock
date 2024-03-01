@@ -12,43 +12,24 @@ const respuestasCorrectas = {
 //Aquí recojo todos los inputs y los meto en una variable
 const arrayInputs = document.querySelectorAll("input");
 //el evento input hace que se produzca un cambio cada vez que el usuario modifique algo, es decir cada vez que cambie el valor
-
 // recorro todos los input 
 arrayInputs.forEach(function (input) {
     //le digo que este pendiente cada vez que el usuario haga input
     input.addEventListener("input", function (event) {
-        //el evento 
+        //el evento input se acciona cuando el usuario hace cualquier cambio,cualquier cambio a cualquier valor
         //si checked es false
         arrayInputs.forEach(
             function (input) {
-                //recorro de nuevo todos los inputs, los reviso y los pinto de color claro
-                // Cambio el color de fondo del contenedor(respuesta)
+                //recorro de nuevo todos los inputs, los reviso y los pinto de color oscuro si estan checked
                 if (input.checked) {
                     input.parentElement.style.backgroundColor = "rgb(39, 48, 129)";
                 } else {
                     input.parentElement.style.backgroundColor = "rgb(121, 131, 224)";
                 }
-                //y ahora pintamelos oscuros si esta chequeado
+                //y ahora pintamelos claritos si no esta chequeado
             })
     });
 });
-
-
-
-let submitButton = document.querySelector("button")
-
-submitButton.addEventListener("click", function (event) {
-    let counterRespondidas = 0;
-    let arrayInputs = document.querySelectorAll("input")
-    arrayInputs.forEach(function (input) {
-        if (input.checked) {
-            counterRespondidas++
-        }
-    })
-    if (counterRespondidas != 5) {
-        alert('Te faltan preguntas por contestar')
-    }
-})
 
 
 
