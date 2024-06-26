@@ -45,4 +45,4 @@ El diseño del quiz tiene una temática de rock, utilizando colores propios del 
 
 
 
-## [Pulsa aquí para jugar a nuestro Quiz(https://gemagit.github.io/quizRock/index.html)
+## [Pulsa aquí para jugar a nuestro Quiz(https://gemagit.github.io/quizRock/index.html)]
