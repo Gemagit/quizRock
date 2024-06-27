@@ -9,12 +9,12 @@ Utilizar un único <form>
 Cuando hagas "Enviar", se realizará la validación del formulario
 
 Requisitos:
--Manipulación dinámica del DOM
--Sin frameworks ni librerias externas en la medida de lo posible
--Gestión del proyecto desde el inicio en un único repositorio en Github. Usar el sistema de ramas, main, develop, etc... como hemos visto en clase.
--Código limpio, buenas prácticas
--Documentar bien el README
--Subirlo GitHub Pages y compartid el enlace (y ponedlo en el fichero Readme).
+1. Manipulación dinámica del DOM
+2. Sin frameworks ni librerias externas en la medida de lo posible
+3. Gestión del proyecto desde el inicio en un único repositorio en Github. Usar el sistema de ramas, main, develop, etc... como hemos visto en clase.
+4. Código limpio, buenas prácticas
+5. Documentar bien el README
+6. Subirlo GitHub Pages y compartid el enlace (y ponedlo en el fichero Readme).
 
 ## Table of Contents
 1. Mobile First
