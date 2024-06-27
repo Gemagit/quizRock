@@ -1,7 +1,7 @@
 # quizRock 
 
 ## Introduction
-Proyecto indiviual para crear un juego de preguntas y respuestas múltiples aplicando los conocimientos de JavaScript aprendidos hasta el momento. Enviar la URL del repositorio en el que lo hayáis subido. 
+Proyecto individual para crear un juego de preguntas y respuestas múltiples aplicando los conocimientos de JavaScript aprendidos hasta el momento. Enviar la URL del repositorio en el que lo hayáis subido. 
 
 El Quiz constará de 10 preguntas. Cada pregunta tendrá 4 opciones y sólo una de ellas será la correcta.
 Visualizar un único formulario con 10 preguntas en el navegador (en un mismo documento HTML)
@@ -49,6 +49,13 @@ Las tecnologías usadas en este quiz son las siguientes:
 ## 3. Features
 
 Recientemente, desarrollé mi primer quiz web, donde di mis primeros pasos en JavaScript. Este proyecto fue una experiencia muy emocionante y educativa para mí. Utilicé JavaScript para manejar la lógica del quiz, como la validación de respuestas, la puntuación y la interacción con el usuario. Implementé funciones para mostrar preguntas de forma dinámica y capturar las respuestas del usuario, lo que me permitió comprender mejor cómo manipular el DOM y trabajar con eventos. Aunque fue desafiante, logré crear un quiz interactivo y funcional que se integra perfectamente con el diseño simple y limpio que había desarrollado previamente con HTML y CSS. Este proyecto no solo me ayudó a mejorar mis habilidades técnicas, sino que también me enseñó la importancia de la planificación y el diseño de la lógica en el desarrollo web.
+
+
+![botoncolor](https://github.com/Gemagit/quizRock/assets/143506667/77f6f2f5-5d32-4259-aa98-3ba0cf52786f)
+
+![submit](https://github.com/Gemagit/quizRock/assets/143506667/609168a3-cf6d-4ddf-a776-10c16005d240)
+
+![alert](https://github.com/Gemagit/quizRock/assets/143506667/5bd1b656-7e45-499e-839b-400613f1fe2c)
 
 ## 4. Design
 
