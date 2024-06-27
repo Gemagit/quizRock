@@ -54,7 +54,9 @@ Recientemente, desarrollé mi primer quiz web, donde di mis primeros pasos en Ja
 
 El diseño del quiz tiene una temática de rock, utilizando colores propios del rock como morados y amarillos, con un fondo de calaveras que le da un toque rebelde y auténtico. 
 
+![calavera](https://github.com/Gemagit/quizRock/assets/143506667/85708f95-7a91-4b9a-9acc-b38160a5d4cb)
 
+![cuernos](https://github.com/Gemagit/quizRock/assets/143506667/09e14418-07af-4406-95e7-d5295064bdb3)
 
 
 
